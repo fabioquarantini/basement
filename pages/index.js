@@ -27,11 +27,12 @@ export default function Home() {
         slidesPerView={1}
         navigation
         pagination={{ clickable: true }}
+        loop={true}
         onSlideChange={() => console.log('slide change')}
         onSwiper={(swiper) => console.log(swiper)}
       >
-        <SwiperSlide><img src="/img/sample-1.jpg"></img></SwiperSlide>
-        <SwiperSlide><img src="/img/sample-2.jpg"></img></SwiperSlide>
+        <SwiperSlide><img src="/img/sample-1.jpg" alt="Sample" /></SwiperSlide>
+        <SwiperSlide><img src="/img/sample-2.jpg" alt="Sample" /></SwiperSlide>
       </Swiper>
       <Title>Basement</Title>
     </div>
