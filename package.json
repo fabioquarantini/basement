@@ -1,0 +1,23 @@
+{
+  "name": "basement",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "framer-motion": "^2.6.6",
+    "next": "9.5.3",
+    "nprogress": "^0.2.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-is": "16.13.1",
+    "styled-components": "5.1.1"
+  },
+  "devDependencies": {
+    "babel-plugin-styled-components": "1.11.1"
+  },
+  "license": "MIT"
+}
