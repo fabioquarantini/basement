@@ -2,7 +2,9 @@ import Router from 'next/router';
 import { ThemeProvider, createGlobalStyle } from 'styled-components'
 import NProgress from 'nprogress';
 import Head from 'next/head'
-import 'nprogress/nprogress.css'; //styles of nprogress
+import 'nprogress/nprogress.css';
+// TODO: Move swiper css
+import 'swiper/swiper-bundle.css';
 
 const theme = {
   colors: {
@@ -29,6 +31,27 @@ const GlobalStyle = createGlobalStyle`
   :after {
     box-sizing: border-box;
   }
+
+  audio,
+  canvas,
+  iframe,
+  img,
+  svg,
+  video {
+    vertical-align: middle;
+  }
+
+  img,
+  video,
+  object {
+    height: auto;
+    max-width: 100%;
+  }
+
+  figure {
+    margin: 0;
+  }
+
 `;
 
 Router.events.on('routeChangeStart', () => NProgress.start());
