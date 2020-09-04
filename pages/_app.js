@@ -2,63 +2,20 @@ import Router from 'next/router';
 import { ThemeProvider, createGlobalStyle } from 'styled-components'
 import NProgress from 'nprogress';
 import Head from 'next/head'
+import GlobalStyle from "../styles/global";
+import { lightTheme, darkTheme } from '../settings/theme';
 import 'nprogress/nprogress.css';
 // TODO: Move swiper css
 import 'swiper/swiper-bundle.css';
-
-const theme = {
-  colors: {
-    primary: '#0070f3',
-  },
-}
-
-const GlobalStyle = createGlobalStyle`
- html,
- body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    color: ${({ theme }) => theme.colors.primary};
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    overflow-x: hidden;
-  }
-
-  body {
-    margin: 0;
-  }
-
-  *,
-  :before,
-  :after {
-    box-sizing: border-box;
-  }
-
-  audio,
-  canvas,
-  iframe,
-  img,
-  svg,
-  video {
-    vertical-align: middle;
-  }
-
-  img,
-  video,
-  object {
-    height: auto;
-    max-width: 100%;
-  }
-
-  figure {
-    margin: 0;
-  }
-
-`;
 
 Router.events.on('routeChangeStart', () => NProgress.start());
 Router.events.on('routeChangeComplete', () => NProgress.done());
 Router.events.on('routeChangeError', () => NProgress.done());
 
-function MyApp({ Component, pageProps }) {
+function App({ Component, pageProps }) {
+
+  const theme = lightTheme
+
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
@@ -74,4 +31,4 @@ function MyApp({ Component, pageProps }) {
   )
 }
 
-export default MyApp
+export default App
