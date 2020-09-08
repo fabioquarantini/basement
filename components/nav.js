@@ -5,6 +5,7 @@ const links = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
   { href: '/products', label: 'Products' },
+  { href: '/productsgql', label: 'Products GQL' },
   { href: '/animations', label: 'Animations' },
 ].map(link => ({
   ...link,
