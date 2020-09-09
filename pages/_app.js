@@ -1,8 +1,8 @@
 import Router from 'next/router';
-import { ThemeProvider } from 'styled-components'
+import { ThemeProvider } from 'styled-components';
 import { ApolloProvider, ApolloClient, InMemoryCache } from '@apollo/client';
 import NProgress from 'nprogress';
-import Head from 'next/head'
+import Head from 'next/head';
 import GlobalStyle from "../styles/global";
 import { lightTheme, darkTheme } from '../settings/theme';
 import 'nprogress/nprogress.css';
@@ -20,7 +20,7 @@ Router.events.on('routeChangeError', () => NProgress.done());
 
 function App({ Component, pageProps }) {
 
-  const theme = lightTheme
+  const theme = lightTheme;
 
   return (
     <ApolloProvider client={client}>
@@ -31,7 +31,7 @@ function App({ Component, pageProps }) {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="icon" type="image/png" href="/favicon.png" />
           <link rel="apple-touch-icon" href="/icon.png" />
-          <meta name="theme-color" content="#fafafa" />
+          <meta name="theme-color" content={theme.colors.primary} />
         </Head>
         <Component {...pageProps} />
       </ThemeProvider>
