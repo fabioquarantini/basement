@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Nav from '../components/nav'
+import Nav from '../components/Nav'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';

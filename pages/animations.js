@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Nav from '../components/nav'
+import Nav from '../components/Nav'
 import { motion } from "framer-motion"
 
 import styled from 'styled-components'
