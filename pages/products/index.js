@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Nav from '../../components/Nav'
+// import Nav from '../../components/Nav'
 
 import styled from 'styled-components'
 const Title = styled.h1`
@@ -14,7 +14,7 @@ export default function Products({ data }) {
       <Head>
         <title>Products</title>
 ì      </Head>
-      <Nav />
+      {/* <Nav /> */}
       <Title>Products</Title>
       <ul>
       {data.map(product => (

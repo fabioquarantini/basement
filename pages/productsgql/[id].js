@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Nav from '../../components/Nav'
+// import Nav from '../../components/Nav'
 import { useQuery, gql } from '@apollo/client';
 import { useRouter } from 'next/router';
 import styled from 'styled-components'
@@ -33,7 +33,7 @@ export default function Product() {
       <Head>
         <title>Products</title>
       </Head>
-      <Nav />
+      {/* <Nav /> */}
       <Title>{data.post.title}</Title>
     </div>
   )

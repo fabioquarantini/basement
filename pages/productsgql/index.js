@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Nav from '../../components/Nav'
+// import Nav from '../../components/Nav'
 import styled from 'styled-components'
 import ProductsList from '../../components/ProductsList'
 
@@ -15,7 +15,7 @@ export default function Products() {
       <Head>
         <title>Products</title>
       </Head>
-      <Nav />
+      {/* <Nav /> */}
       <Title>Products</Title>
       <ProductsList />
     </div>

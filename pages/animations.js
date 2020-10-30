@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Nav from '../components/Nav'
+// import Nav from '../components/Nav'
 import { motion } from "framer-motion"
 
 import styled from 'styled-components'
@@ -23,7 +23,7 @@ export default function Animation() {
       <Head>
         <title>Animation</title>
       </Head>
-      <Nav />
+      {/* <Nav /> */}
       <Title>Animation</Title>
 
       <AnimatedDiv
