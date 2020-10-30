@@ -1,27 +1,19 @@
-import React from 'react'
-import Link from 'next/link'
-
-const links = [
-  { href: '/', label: 'Home' },
-  { href: '/about', label: 'About' },
-  { href: '/products', label: 'Products' },
-  { href: '/productsgql', label: 'Products GQL' },
-  { href: '/animations', label: 'Animations' },
-].map(link => ({
-  ...link,
-  key: `nav-link-${link.href}-${link.label}`,
-}))
+import ActiveLink from './ActiveLink'
 
 const Nav = () => (
   <nav>
-    <ul>
-      {links.map(({ key, href, label }) => (
-        <li key={key}>
-          <Link href={href}>
-            <a>{label}</a>
-          </Link>
-        </li>
-      ))}
+
+    <ul className="nav">
+      <li>
+        <ActiveLink activeClassName="active" href="/">
+          <a className="nav-link">Home</a>
+        </ActiveLink>
+      </li>
+      <li>
+        <ActiveLink activeClassName="active" href="/about">
+          <a className="nav-link">About</a>
+        </ActiveLink>
+      </li>
     </ul>
 
     <style jsx>{`
@@ -50,7 +42,12 @@ const Nav = () => (
         text-decoration: none;
         font-size: 13px;
       }
+
+      .active {
+        color: blue;
+      }
     `}</style>
+
   </nav>
 )
 
