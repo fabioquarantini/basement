@@ -1,5 +1,7 @@
 import Head from 'next/head'
-// import Nav from '../../components/Nav'
+import Layout from '../../components/Layout'
+import Header from '../../components/Header'
+import Footer from '../../components/Footer'
 import { useQuery, gql } from '@apollo/client';
 import { useRouter } from 'next/router';
 import styled from 'styled-components'
@@ -29,12 +31,16 @@ export default function Product() {
   if (error) return <p>Error :(</p>;
 
   return (
-    <div>
+    <>
       <Head>
         <title>Products</title>
       </Head>
-      {/* <Nav /> */}
-      <Title>{data.post.title}</Title>
-    </div>
+      <Header />
+      <Layout>
+        <Title>{data.post.title}</Title>
+        <p>{data.post.body}</p>
+      </Layout>
+      <Footer/>
+    </>
   )
 }

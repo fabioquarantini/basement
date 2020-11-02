@@ -1,5 +1,7 @@
 import Head from 'next/head'
-// import Nav from '../../components/Nav'
+import Layout from '../../components/Layout'
+import Header from '../../components/Header'
+import Footer from '../../components/Footer'
 import styled from 'styled-components'
 import ProductsList from '../../components/ProductsList'
 
@@ -11,13 +13,16 @@ const Title = styled.h1`
 
 export default function Products() {
   return (
-    <div>
+    <>
       <Head>
         <title>Products</title>
       </Head>
-      {/* <Nav /> */}
-      <Title>Products</Title>
-      <ProductsList />
-    </div>
+      <Header />
+      <Layout>
+        <Title>Products</Title>
+        <ProductsList />
+      </Layout>
+      <Footer/>
+    </>
   )
 }

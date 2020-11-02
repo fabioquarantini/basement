@@ -1,5 +1,7 @@
 import Head from 'next/head'
-// import Nav from '../components/Nav'
+import Header from '../components/Header'
+import Layout from '../components/Layout'
+import Footer from '../components/Footer'
 import { motion } from "framer-motion"
 
 import styled from 'styled-components'
@@ -19,26 +21,29 @@ const AnimatedDiv = styled(motion.div)`
 
 export default function Animation() {
   return (
-    <div>
+    <>
       <Head>
         <title>Animation</title>
       </Head>
-      {/* <Nav /> */}
-      <Title>Animation</Title>
+      <Header />
+      <Layout>
+        <Title>Animation</Title>
 
-      <AnimatedDiv
-        className="container2"
-        initial={{ scale: 0 }}
-        animate={{ rotate: 180, scale: 1 }}
-        transition={{
-          yoyo: Infinity,
-          //type: "spring",
-          duration: 2,
-          stiffness: 260,
-          damping: 20
-        }}
-      />
+        <AnimatedDiv
+          className="container2"
+          initial={{ scale: 0 }}
+          animate={{ rotate: 180, scale: 1 }}
+          transition={{
+            yoyo: Infinity,
+            //type: "spring",
+            duration: 2,
+            stiffness: 260,
+            damping: 20
+          }}
+        />
+      </Layout>
 
-    </div>
+      <Footer/>
+    </>
   )
 }

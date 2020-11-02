@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Link from 'next/link'
-// import Nav from '../../components/Nav'
+import Layout from '../../components/Layout'
+import Header from '../../components/Header'
+import Footer from '../../components/Footer'
 
 import styled from 'styled-components'
 const Title = styled.h1`
@@ -10,22 +12,25 @@ const Title = styled.h1`
 `
 export default function Products({ data }) {
   return (
-    <div>
+    <>
       <Head>
         <title>Products</title>
 ì      </Head>
-      {/* <Nav /> */}
-      <Title>Products</Title>
-      <ul>
-      {data.map(product => (
-        <li key={product.id}>
-          <Link href="/products/[id]" as={`/products/${product.id}`}>
-            <a className="list__link">{product.title}</a>
-          </Link>
-        </li>
-      ))}
-      </ul>
-    </div>
+      <Header />
+      <Layout>
+        <Title>Products</Title>
+        <ul>
+        {data.map(product => (
+          <li key={product.id}>
+            <Link href="/products/[id]" as={`/products/${product.id}`}>
+              <a className="list__link">{product.title}</a>
+            </Link>
+          </li>
+        ))}
+        </ul>
+      </Layout>
+      <Footer/>
+    </>
   )
 }
 

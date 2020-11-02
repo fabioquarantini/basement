@@ -34,7 +34,8 @@ export default function ProductsList() {
 
   return data.posts.data.map(({ id, title }) => (
      <li key={id}>
-          <Link href="/productsgql/[id]" as={`/productsgql/${id}`}>
+          <Link href={`/productsgql/${id}`}>
+          {/* <Link href="/productsgql/[id]" as={`/productsgql/${id}`}> */}
             <a className="list__link">{title}</a>
           </Link>
       </li>
