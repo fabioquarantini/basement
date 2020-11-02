@@ -14,26 +14,36 @@ const Nav = () => (
           <a className="nav-link">About</a>
         </ActiveLink>
       </li>
+      <li>
+        <ActiveLink activeClassName="active" href="/products">
+          <a className="nav-link">Products</a>
+        </ActiveLink>
+      </li>
+      <li>
+        <ActiveLink activeClassName="active" href="/productsgql">
+          <a className="nav-link">Products GQL</a>
+        </ActiveLink>
+      </li>
+      <li>
+        <ActiveLink activeClassName="active" href="/animations">
+          <a className="nav-link">Animations</a>
+        </ActiveLink>
+      </li>
     </ul>
 
     <style jsx>{`
       nav {
         text-align: center;
-        background: white;
-        padding: 20px;
-        box-shadow: 0 11px 40px 0 rgba(0, 0, 0, 0.25), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
       }
       ul {
-        display: flex;
-        margin:0;
-        justify-content: space-between;
+
       }
       nav > ul {
-        padding: 4px 16px;
+        padding: 0px 16px;
       }
       li {
-        display: flex;
-        padding: 6px 8px;
+        display: inline-block;
+        padding: 0px 8px;
       }
       a {
         color: black;
