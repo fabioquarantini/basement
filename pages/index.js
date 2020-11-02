@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Link from 'next/link'
+import Image from 'next/image'
 import Layout from '../components/Layout'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
@@ -32,8 +32,22 @@ export default function Home() {
           onSlideChange={() => console.log('slide change')}
           onSwiper={(swiper) => console.log(swiper)}
         >
-          <SwiperSlide><img src="/img/sample-1.jpg" alt="Sample" /></SwiperSlide>
-          <SwiperSlide><img src="/img/sample-2.jpg" alt="Sample" /></SwiperSlide>
+          <SwiperSlide>
+            <Image
+              src="/img/sample-1.jpg"
+              alt="Basement"
+              width={1920}
+              height={1280}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image
+              src="/img/sample-2.jpg"
+              alt="Basement"
+              width={1920}
+              height={1280}
+            />
+          </SwiperSlide>
         </Swiper>
       <Layout>
         <Title>Basement</Title>
