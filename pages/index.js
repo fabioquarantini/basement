@@ -7,13 +7,6 @@ import Footer from '../components/Footer'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 
-import styled from 'styled-components'
-const Title = styled.h1`
-  font-size: 100px;
-  text-align: center;
-  color: ${({ theme }) => theme.colors.primary};
-`
-
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
 export default function Home() {
@@ -50,7 +43,9 @@ export default function Home() {
           </SwiperSlide>
         </Swiper>
       <Layout>
-        <Title>Basement</Title>
+        <h1 className="text-5xl text-center text-gray-700 dark:text-gray-100">
+          Basement
+        </h1>
       </Layout>
       <Footer/>
     </>

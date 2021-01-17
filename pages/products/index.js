@@ -4,12 +4,6 @@ import Layout from '../../components/Layout'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 
-import styled from 'styled-components'
-const Title = styled.h1`
-  font-size: 100px;
-  text-align: center;
-  color: ${({ theme }) => theme.colors.primary};
-`
 export default function Products({ data }) {
   return (
     <>
@@ -18,10 +12,10 @@ export default function Products({ data }) {
 ì      </Head>
       <Header />
       <Layout>
-        <Title>Products</Title>
-        <ul>
+        <h1>Products</h1>
+        <ul className="divide-y divide-gray-200">
         {data.map(product => (
-          <li key={product.id}>
+          <li key={product.id} className="py-4">
             <Link href="/products/[id]" as={`/products/${product.id}`}>
               <a className="list__link">{product.title}</a>
             </Link>

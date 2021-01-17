@@ -33,7 +33,7 @@ export default function ProductsList() {
   if (error) return <p>Error :(</p>;
 
   return data.posts.data.map(({ id, title }) => (
-     <li key={id}>
+     <li key={id} className="py-4">
           <Link href={`/productsgql/${id}`}>
           {/* <Link href="/productsgql/[id]" as={`/productsgql/${id}`}> */}
             <a className="list__link">{title}</a>

@@ -4,13 +4,6 @@ import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import { useQuery, gql } from '@apollo/client';
 import { useRouter } from 'next/router';
-import styled from 'styled-components'
-
-const Title = styled.h1`
-  font-size: 100px;
-  text-align: center;
-  color: ${({ theme }) => theme.colors.primary};
-`;
 
 export default function Product() {
 
@@ -37,7 +30,7 @@ export default function Product() {
       </Head>
       <Header />
       <Layout>
-        <Title>{data.post.title}</Title>
+        <h1>{data.post.title}</h1>
         <p>{data.post.body}</p>
       </Layout>
       <Footer/>

@@ -4,12 +4,6 @@ import Layout from '../../components/Layout'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 
-import styled from 'styled-components'
-const Title = styled.h1`
-  font-size: 100px;
-  text-align: center;
-  color: ${({ theme }) => theme.colors.primary};
-`
 export default function Product({ data }) {
   return (
     <>
@@ -18,7 +12,7 @@ export default function Product({ data }) {
       </Head>
       <Header />
       <Layout>
-        <Title>{data.title}</Title>
+        <h1>{data.title}</h1>
       </Layout>
       <Footer/>
     </>
