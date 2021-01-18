@@ -8,11 +8,18 @@ export default function Animation() {
   return (
     <>
       <Head>
-        <title>Animation</title>
+        <title>Animations</title>
       </Head>
       <Header />
       <Layout>
-        <h1>Animation</h1>
+        <h1 className="py-16">
+            <span class="block text-base text-center text-indigo-600 font-semibold tracking-wide uppercase">
+              Animations
+            </span>
+            <span class="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+              Lorem ipsum dolor at et erm
+            </span>
+          </h1>
         <motion.div
           className="w-36 h-36 bg-red-500 rounded-md"
           initial={{ scale: 0 }}

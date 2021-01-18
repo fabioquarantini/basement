@@ -1,64 +1,27 @@
 import ActiveLink from './ActiveLink'
 
 const Nav = () => (
-  <nav>
+  <>
+    <ActiveLink activeClassName="border-indigo-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium" href="/">
+      <a className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Home</a>
+    </ActiveLink>
 
-    <ul className="nav">
-      <li>
-        <ActiveLink activeClassName="active" href="/">
-          <a className="nav-link">Home</a>
-        </ActiveLink>
-      </li>
-      <li>
-        <ActiveLink activeClassName="active" href="/about">
-          <a className="nav-link">About</a>
-        </ActiveLink>
-      </li>
-      <li>
-        <ActiveLink activeClassName="active" href="/products">
-          <a className="nav-link">Products</a>
-        </ActiveLink>
-      </li>
-      <li>
-        <ActiveLink activeClassName="active" href="/productsgql">
-          <a className="nav-link">Products GQL</a>
-        </ActiveLink>
-      </li>
-      <li>
-        <ActiveLink activeClassName="active" href="/animations">
-          <a className="nav-link">Animations</a>
-        </ActiveLink>
-      </li>
-    </ul>
+    <ActiveLink activeClassName="border-indigo-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium" href="/about">
+      <a className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">About</a>
+    </ActiveLink>
 
-    <style jsx>{`
-      nav {
-        text-align: center;
-      }
-      ul {
+    <ActiveLink activeClassName="border-indigo-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium" href="/products">
+      <a className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Products</a>
+    </ActiveLink>
 
-      }
-      nav > ul {
-        padding: 0px 16px;
-      }
-      li {
-        display: inline-block;
-        padding: 0px 8px;
-      }
-      a {
-        color: black;
-        text-transform: uppercase;
-        font-weight:bold;
-        text-decoration: none;
-        font-size: 13px;
-      }
+    <ActiveLink activeClassName="border-indigo-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium" href="/productsgql">
+      <a className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Products GQL</a>
+    </ActiveLink>
 
-      .active {
-        color: blue;
-      }
-    `}</style>
-
-  </nav>
+    <ActiveLink activeClassName="border-indigo-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium" href="/animations">
+      <a className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Animations</a>
+    </ActiveLink>
+  </>
 )
 
 export default Nav
