@@ -7,6 +7,8 @@ import Footer from '../components/Footer'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 
+import 'swiper/swiper-bundle.css';
+
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
 export default function Home() {
@@ -25,20 +27,20 @@ export default function Home() {
           onSlideChange={() => console.log('slide change')}
           onSwiper={(swiper) => console.log(swiper)}
         >
-          <SwiperSlide>
+          <SwiperSlide className="aspect-w-16 aspect-h-5">
             <Image
               src="/img/sample-1.jpg"
               alt="Basement"
-              width={1920}
-              height={1280}
+              className="object-cover"
+              layout="fill"
             />
           </SwiperSlide>
-          <SwiperSlide>
+          <SwiperSlide className="aspect-w-16 aspect-h-5">
             <Image
               src="/img/sample-2.jpg"
               alt="Basement"
-              width={1920}
-              height={1280}
+              className="object-cover"
+              layout="fill"
             />
           </SwiperSlide>
         </Swiper>

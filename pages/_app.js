@@ -2,10 +2,8 @@ import Router from 'next/router';
 import { ApolloProvider, ApolloClient, InMemoryCache } from '@apollo/client';
 import NProgress from 'nprogress';
 import Head from 'next/head';
-import 'nprogress/nprogress.css';
-// TODO: Move swiper css
 import '../styles/globals.css'
-import 'swiper/swiper-bundle.css';
+import 'nprogress/nprogress.css';
 
 const client = new ApolloClient({
   uri: 'https://graphqlzero.almansi.me/api',
