@@ -13,10 +13,10 @@ export default function Product({ data }) {
       <Header />
       <div className="max-w-xl m-auto">
         <h1 className="py-16">
-          <span class="block text-base text-center text-indigo-600 font-semibold tracking-wide uppercase">
+          <span className="block text-base text-center text-indigo-600 font-semibold tracking-wide uppercase">
             Product:
           </span>
-          <span class="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+          <span className="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
             {data.title}
           </span>
         </h1>

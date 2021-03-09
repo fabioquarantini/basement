@@ -11,14 +11,14 @@ export default function About() {
       </Head>
       <Header />
       <Layout>
-        <div class="relative py-16 overflow-hidden">
-          <div class="hidden lg:block lg:absolute lg:inset-y-0 lg:h-full lg:w-full">
+        <div className="relative py-16 overflow-hidden">
+          <div className="hidden lg:block lg:absolute lg:inset-y-0 lg:h-full lg:w-full">
             <div
-              class="relative h-full text-lg max-w-prose mx-auto"
+              className="relative h-full text-lg max-w-prose mx-auto"
               aria-hidden="true"
             >
               <svg
-                class="absolute top-12 left-full transform translate-x-32"
+                className="absolute top-12 left-full transform translate-x-32"
                 width="404"
                 height="384"
                 fill="none"
@@ -38,7 +38,7 @@ export default function About() {
                       y="0"
                       width="4"
                       height="4"
-                      class="text-gray-200"
+                      className="text-gray-200"
                       fill="currentColor"
                     />
                   </pattern>
@@ -50,7 +50,7 @@ export default function About() {
                 />
               </svg>
               <svg
-                class="absolute top-1/2 right-full transform -translate-y-1/2 -translate-x-32"
+                className="absolute top-1/2 right-full transform -translate-y-1/2 -translate-x-32"
                 width="404"
                 height="384"
                 fill="none"
@@ -70,7 +70,7 @@ export default function About() {
                       y="0"
                       width="4"
                       height="4"
-                      class="text-gray-200"
+                      className="text-gray-200"
                       fill="currentColor"
                     />
                   </pattern>
@@ -82,7 +82,7 @@ export default function About() {
                 />
               </svg>
               <svg
-                class="absolute bottom-12 left-full transform translate-x-32"
+                className="absolute bottom-12 left-full transform translate-x-32"
                 width="404"
                 height="384"
                 fill="none"
@@ -102,7 +102,7 @@ export default function About() {
                       y="0"
                       width="4"
                       height="4"
-                      class="text-gray-200"
+                      className="text-gray-200"
                       fill="currentColor"
                     />
                   </pattern>
@@ -115,24 +115,24 @@ export default function About() {
               </svg>
             </div>
           </div>
-          <div class="relative px-4 sm:px-6 lg:px-8">
-            <div class="text-lg max-w-prose mx-auto">
+          <div className="relative px-4 sm:px-6 lg:px-8">
+            <div className="text-lg max-w-prose mx-auto">
               <h1>
-                <span class="block text-base text-center text-indigo-600 font-semibold tracking-wide uppercase">
+                <span className="block text-base text-center text-indigo-600 font-semibold tracking-wide uppercase">
                   About
                 </span>
-                <span class="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                <span className="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
                   Lorem ipsum dolor at et erm
                 </span>
               </h1>
-              <p class="mt-8 text-xl text-gray-500 leading-8">
+              <p className="mt-8 text-xl text-gray-500 leading-8">
                 Aliquet nec orci mattis amet quisque ullamcorper neque, nibh
                 sem. At arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque
                 id at vitae feugiat egestas ac. Diam nulla orci at in viverra
                 scelerisque eget. Eleifend egestas fringilla sapien.
               </p>
             </div>
-            <div class="mt-6 prose prose-indigo prose-lg text-gray-500 mx-auto">
+            <div className="mt-6 prose prose-indigo prose-lg text-gray-500 mx-auto">
               <p>
                 Faucibus commodo massa rhoncus, volutpat.{" "}
                 <strong>Dignissim</strong> sed <strong>eget risus enim</strong>.
@@ -181,7 +181,7 @@ export default function About() {
               </p>
               <figure>
                 <img
-                  class="w-full rounded-lg"
+                  className="w-full rounded-lg"
                   src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=facearea&w=1310&h=873&q=80&facepad=3"
                   alt=""
                   width="1310"
